@@ -36,14 +36,15 @@ void setup() {
   myservo.attach(11);
   int pos = myservo.read();
   
-  //set servo at 45 degrees to begin with
+  //set servo at to 180 degrees to begin with
   while (pos != 180) {
     myservo.write(pos);
     delay(15);
     pos++;
   }
-  myservo.write(130);
-  delay(2000);
+  
+  openCage();
+  closeCage();
 }
   
 void loop() {
@@ -51,14 +52,12 @@ void loop() {
 
 //opens cage to deliver drink
 void openCage() {
-  myservo.write(85);
-  delay(1500);
+  myservo.write(130);
+  delay(5000);
 }
 
 //closes cage after delivery
 void closeCage() {
-  myservo.write(-85);
-  delay(1500);
+  myservo.write(180);
+  delay(5000);
 }
-
-//
