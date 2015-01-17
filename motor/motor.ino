@@ -23,3 +23,42 @@ void loop() {
  digitalWrite(motorPin2, LOW);
  delay(200);
 }
+
+
+
+
+
+
+#include <Servo.h>
+Servo myservo;
+
+void setup() {
+  myservo.attach(11);
+  int pos = myservo.read();
+  
+  //set servo at 45 degrees to begin with
+  while (pos != 180) {
+    myservo.write(pos);
+    delay(15);
+    pos++;
+  }
+  myservo.write(130);
+  delay(2000);
+}
+  
+void loop() {
+}
+
+//opens cage to deliver drink
+void openCage() {
+  myservo.write(85);
+  delay(1500);
+}
+
+//closes cage after delivery
+void closeCage() {
+  myservo.write(-85);
+  delay(1500);
+}
+
+//
