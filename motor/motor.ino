@@ -11,16 +11,18 @@ void setup() {
   myservo.attach(11);
   int pos = myservo.read();
   
-  //set servo at 45 degrees to begin with
+  //set servo at to 180 degrees to begin with
   while (pos != 180) {
     myservo.write(pos);
     delay(15);
     pos++;
   }
-  myservo.write(130);
-  delay(2000);
   
+  openCage();
+  closeCage();
 }
+  
+
   
 void loop() {
  digitalWrite(motorPin1, HIGH);
@@ -40,36 +42,6 @@ void loop() {
  delay(200);
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-#include <Servo.h>
-Servo myservo;
-
-void setup() {
-  myservo.attach(11);
-  int pos = myservo.read();
-  
-  //set servo at to 180 degrees to begin with
-  while (pos != 180) {
-    myservo.write(pos);
-    delay(15);
-    pos++;
-  }
-  
-  openCage();
-  closeCage();
-}
-  
-void loop() {
-}
-
->>>>>>> origin/master
-//opens cage to deliver drink
 void openCage() {
   myservo.write(130);
   delay(5000);
@@ -80,3 +52,4 @@ void closeCage() {
   myservo.write(180);
   delay(5000);
 }
+
