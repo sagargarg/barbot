@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.terahackers.pennapps.barbot" >
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".activities.BarBot"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activities.HostActivity"
+            android:label="@string/title_activity_host" >
+        </activity>
+        <activity
+            android:name=".activities.AddGuestActivity"
+            android:label="@string/title_activity_add_guest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Validation"
+            android:label="@string/title_activity_validation" >
+        </activity>
+        <activity
+            android:name=".activities.SeeCodeActivity"
+            android:label="@string/title_activity_see_code" >
+        </activity>
+        <activity
+            android:name=".activities.ChooseActivity"
+            android:label="@string/title_activity_choose" >
+        </activity>
+        <activity
+            android:name=".activities.HealthActivity"
+            android:label="@string/title_activity_health" >
+        </activity>
+    </application>
+
+</manifest>

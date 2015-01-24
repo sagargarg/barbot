@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BarBot</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_host">HostActivity</string>
+    <string name="title_activity_add_guest">AddGuestActivity</string>
+    <string name="title_activity_validation">Validation</string>
+    <string name="title_activity_see_code">SeeCodeActivity</string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="title_activity_health">HealthActivity</string>
+
+</resources>

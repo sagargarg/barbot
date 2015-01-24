@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ListView
+        android:id = "@+id/myList"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+    <Button
+        android:id = "@+id/addBtn"
+        android:text = "Add a Guest"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+
+        android:layout_width="398dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape1"
+        android:shadowColor="#2B18A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+   <Button
+        android:id = "@+id/doneBtn"
+        android:text = "Done With Party"
+       android:textColor="#FFFFFF"
+       android:textSize="30sp"
+
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@drawable/buttonshape1"
+       android:shadowColor="#2B18A8"
+       android:shadowDx="0"
+       android:shadowDy="0"
+       android:shadowRadius="5"/>
+
+</LinearLayout>
